@@ -7,9 +7,9 @@ API.mixin(require('./lib/api_media'));
 API.mixin(require('./lib/api_menu'));
 // 消息发送
 API.mixin(require('./lib/api_message'));
-// // 标签管理
-// API.mixin(require('./lib/api_tag'));
-// // 用户管理
+// 标签管理
+API.mixin(require('./lib/api_tag'));
+// 用户管理
 API.mixin(require('./lib/api_user'));
 // IP段查询
 API.mixin(require('./lib/api_ip'));
@@ -19,8 +19,8 @@ API.mixin(require('./lib/api_js'));
 API.mixin(require('./lib/api_agent'));
 // 通讯录批量操作接口
 API.mixin(require('./lib/api_batch'));
-// // 永久素材管理接口
-// API.mixin(require('./lib/api_material'));
-// // 摇一摇接口
-// API.mixin(require('./lib/api_shake'));
-module.exports = API;
+// 永久素材管理接口
+API.mixin(require('./lib/api_material'));
+// 摇一摇接口
+API.mixin(require('./lib/api_shake'));
+module.exports.API = API;

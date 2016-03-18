@@ -1,5 +1,5 @@
 var config = require('./config');
-var API = require('../');
+var API = require('../').API;
 var expect = require('expect.js');
 
 describe('api_agent', function () {
