@@ -1,3 +1,4 @@
+// 微信企业号主动调用接口API
 var API = require('./lib/api_common');
 // 部门管理
 API.mixin(require('./lib/api_department'));
@@ -23,4 +24,15 @@ API.mixin(require('./lib/api_batch'));
 API.mixin(require('./lib/api_material'));
 // 摇一摇接口
 API.mixin(require('./lib/api_shake'));
+// 企业会话接口
+API.mixin(require('./lib/api_chat'));
+// 企业号客服接口
+API.mixin(require('./lib/api_kf'));
+
 module.exports.API = API;
+
+// 微信企业号第三方应用套件接口API
+var SuiteAPI = require('./lib/api_suite_common');
+// 第三方应用接口
+SuiteAPI.mixin(require('./lib/api_suite_3ps'));
+module.exports.SuiteAPI = SuiteAPI;
